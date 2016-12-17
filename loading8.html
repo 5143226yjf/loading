@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            padding: 80px;
+        }
+        .csshub-loader span{
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border-radius: 100%;
+            background-color: #3498db;
+            opacity: 0;
+        }
+
+        .csshub-loader span:nth-child(1){
+            animation: csshub-opacitychange 1s ease-in-out infinite;
+            -webkit-animation: csshub-opacitychange 1s ease-in-out infinite;
+        }
+
+        .csshub-loader span:nth-child(2){
+            animation: csshub-opacitychange 1s ease-in-out 0.33s infinite;
+            -webkit-animation: csshub-opacitychange 1s ease-in-out 0.33s infinite;
+        }
+
+        .csshub-loader span:nth-child(3){
+            animation: csshub-opacitychange 1s ease-in-out 0.66s infinite;
+            -webkit-animation: csshub-opacitychange 1s ease-in-out 0.66s infinite;
+        }
+
+        @keyframes csshub-opacitychange{
+            0%, 100%{
+                opacity: 0;
+            }
+
+            60%{
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="csshub-loader">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+</body>
+</html>

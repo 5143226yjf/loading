@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            padding: 70px;
+        }
+        .csshub-loader {
+            width: 56px;
+            height: 56px;
+            border: 2px solid rgba(0, 82, 236, 0.5);
+            border-radius: 50%;
+            position: relative;
+            animation: csshub-loader-rotate 1s ease-in-out infinite;
+            -webkit-animation: csshub-loader-rotate 1s ease-in-out infinite;
+            top: 50%;
+            margin: -28px auto 0 auto;
+        }
+        .csshub-loader:after {
+            content: '';
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #0052ec;
+            position: absolute;
+            top: -6px;
+            left: 50%;
+            margin-left: -5px;
+        }
+
+        @keyframes csshub-loader-rotate {
+            0% {
+                transform: rotate(0deg); }
+            100% {
+                transform: rotate(360deg); } }
+
+        @-webkit-keyframes csshub-loader-rotate {
+            0% {
+                transform: rotate(0deg); }
+            100% {
+                transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+<div class="csshub-loader"></div>
+</body>
+</html>

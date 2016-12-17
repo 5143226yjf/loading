@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            padding: 70px;
+        }
+
+        .csshub-loader {
+            width: 56px;
+            height: 56px;
+            border: 8px solid transparent;
+            border-top-color: #0052ec;
+            border-bottom-color: #0052ec;
+            border-radius: 50%;
+            position: relative;
+            animation: csshub-loader-rotate 1s linear infinite;
+            -webkit-animation: csshub-loader-rotate 1s linear infinite;
+            top: 50%;
+            margin: -28px auto 0 auto;
+        }
+
+        @keyframes csshub-loader-rotate {
+            0% {
+                transform: rotate(0); }
+            100% {
+                transform: rotate(360deg); } }
+
+        @-webkit-keyframes csshub-loader-rotate {
+            0% {
+                transform: rotate(0); }
+            100% {
+                transform: rotate(360deg); } }
+    </style>
+</head>
+<body>
+<div class="csshub-loader"></div>
+</body>
+</html>
